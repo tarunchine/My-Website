@@ -407,6 +407,21 @@ header {
               justify-content: space-around;
       margin: 55px 0px 20px;
       font-size: 25px; }
+      header .header-content p.social a {
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%; }
+        header .header-content p.social a span {
+          font-size: 20px;
+            font-size-line-height: 38px;
+          color: #fff; }
+      header .header-content p.social a.mail {
+        background-color: #410093; }
+      header .header-content p.social a.linkedin {
+        background-color: #0077b5; }
+      header .header-content p.social a.facebook {
+        background-color: #3b5998; }
 
 .container {
   display: -webkit-flex;
@@ -418,10 +433,14 @@ header {
         -ms-flex: 1;
             flex: 1; }
     .container .sections .section {
-      height: 100vh; }
+      min-height: 100vh; }
 
 #home-section {
   background-color: #000;
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -446,3 +465,99 @@ header {
       padding: 10px;
       margin-top: 15px;
       display: inline-block; }
+
+#portfolio-section {
+  background-color: #51A39D; }
+  #portfolio-section .heading {
+    text-align: center;
+    font-size: 2em;
+    padding: 30px 0px; }
+
+#about-section {
+  background-color: #d7d7d7; }
+  #about-section .heading {
+    text-align: center;
+    font-size: 2em;
+    padding: 30px 0px; }
+  #about-section p.title {
+    background-color: #3b5998;
+    padding: 5px 0px 5px 10px;
+    color: #fff; }
+  #about-section .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #about-section .content .col-1 {
+      width: 44%; }
+    #about-section .content .block-left {
+      position: relative;
+      left: -100px;
+      transition: all 1s ease-in-out; }
+    #about-section .content .block-right {
+      position: relative;
+      right: -100px;
+      transition: all 1s ease-in-out; }
+    #about-section .content .description {
+      margin: 20px 10px;
+      height: 200px; }
+      #about-section .content .description .post, #about-section .content .description .course {
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px; }
+      #about-section .content .description span {
+        margin-left: 10px; }
+      #about-section .content .description .company {
+        margin: 5px 0px; }
+      #about-section .content .description .duration {
+        margin-bottom: 20px; }
+      #about-section .content .description p.resume {
+        margin: 50px auto 0px;
+        padding: 10px 20px;
+        width: 125px;
+        background-color: #3b5998;
+        color: #fff; }
+  #about-section .fullColumn {
+    width: 94%;
+    margin-left: 3%; }
+  #about-section .award ul {
+    padding: 20px 20px 20px 40px; }
+  #about-section .skills {
+    padding: 0px 0px 20px 0px; }
+    #about-section .skills .content {
+      padding-top: 20px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      #about-section .skills .content .skill-bar {
+        width: 26.6%;
+        background-color: #000;
+        height: 30px;
+        position: relative;
+        margin-bottom: 20px;
+        margin-left: 5%; }
+        #about-section .skills .content .skill-bar .skill-name {
+          position: absolute;
+          top: 5px;
+          left: 5px; }
+        #about-section .skills .content .skill-bar .skill-percent-bg {
+          width: 0%;
+          height: 30px;
+          background-color: rgba(255, 255, 255, 0.7);
+          transition: all 2s ease-in-out; }
+        #about-section .skills .content .skill-bar span {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          color: #fff; }
+
+#contact-section {
+  background-color: #06425C; }
+  #contact-section .heading {
+    text-align: center;
+    font-size: 2em;
+    padding: 30px 0px; }

@@ -6,11 +6,15 @@
 		flex: 1
 
 		.section
-			height: 100vh
+			min-height: 100vh
 
 #home-section
 	background:
 		color: #000
+		image: url('../img/bg.png')
+		position: center
+		size: cover
+		attachment: fixed
 	display: flex
 	flex-direction: column
 	justify-content: space-around
@@ -31,3 +35,90 @@
 			padding: 10px
 			margin-top: 15px
 			display: inline-block
+#portfolio-section
+	background-color: #51A39D
+	.heading
+		text-align: center
+		font-size: 2em
+		padding: 30px 0px
+#about-section
+	background-color: #d7d7d7
+	.heading
+		text-align: center
+		font-size: 2em
+		padding: 30px 0px
+	p.title
+		background-color: #3b5998
+		padding: 5px 0px 5px 10px
+		color: #fff
+	.content
+		display: flex
+		justify-content: space-around
+		.col-1
+			width: 44%
+		.block-left
+			position: relative
+			left: -100px
+			transition: all 1s ease-in-out
+		.block-right
+			position: relative
+			right: -100px
+			transition: all 1s ease-in-out
+		.description
+			margin: 20px 10px
+			height: 200px
+			.post,.course
+				border-bottom: 2px solid #000
+				padding-bottom: 5px
+			span
+				margin-left: 10px
+			.company
+				margin: 5px 0px 
+			.duration
+				margin-bottom: 20px
+
+			p.resume
+				margin: 50px auto 0px
+				padding: 10px 20px
+				width: 125px
+				background-color: #3b5998
+				color: #fff
+	.fullColumn
+		width: 94%
+		margin-left: 3%
+	.award ul
+		padding: 20px 20px 20px 40px
+	.skills
+		padding: 0px 0px 20px 0px
+		.content
+			padding-top: 20px
+			flex-wrap: wrap
+			justify-content: flex-start
+			.skill-bar
+				width: 26.6%
+				background-color: #000
+				height: 30px
+				position: relative
+				margin-bottom: 20px
+				margin-left: 5%
+
+				.skill-name
+					position: absolute
+					top: 5px
+					left: 5px
+				.skill-percent-bg
+					width: 0%
+					height: 30px
+					background-color: rgba(255,255,255,0.7)
+					transition: all 2s ease-in-out
+				span
+					position: absolute
+					right: 5px
+					top: 5px
+					color: #fff
+#contact-section
+	background-color: #06425C
+	.heading
+		text-align: center
+		font-size: 2em
+		padding: 30px 0px
