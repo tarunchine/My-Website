@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	$('.mobile-nav-toggle').click(function(){
+		$('header').toggleClass('active');
+	});
+
+	$('header nav li a').click(function(){
+		$('header').toggleClass('active');
+	});
+
+	
+
 	$(window).scroll(function(){
 		var st=$(window).scrollTop();
 

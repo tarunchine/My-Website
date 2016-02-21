@@ -1,63 +1,66 @@
 #about-section.section
-	p.heading About
-	.content
-		.col-1
-			div.block-left
-				p.title Experience
-				.description
-					div
-						.post Project Engineer
-						.company
-							i.fa.fa-briefcase
-							span Wipro Technologies(Bangalore)
-						.duration
-							i.fa.fa-calendar 
-							span March-2014 to Present
-						.summary Worked on front end related technologies like HTML5 , CSS3 , Javascript ,Jquery , Angular , React , Bootstrap and lot more...
-
-			div.block-left
-				p.title Internship
-				.description
-					div
-						.post Intern
-						.company
-							i.fa.fa-briefcase 
-							span Computer Science Co-operation Indore(CSC Indore)
-						.duration
-							i.fa.fa-calendar 
-							span May-2012 to March-2013
-						.summary Worked on front end related technologies like HTML5 , CSS3 , Javascript ,Jquery , Angular , React , Bootstrap and lot more...
-					
-		.col-1
-			div.block-right
-				p.title Education
-				.description
-					div
-						.course Bachelor of Engineering(B.E.)
-						.company
-							i.fa.fa-briefcase 
-							span S.G.S.I.T.S (Indore)
-						.duration
-							i.fa.fa-calendar 
-							span July-2009 to May-2013
-						.summary Graduated from one of the finest collages of India with specialisation in Information Technology(IT).
-			div.block-right
-				p.title My Resume
-				.description
-					div
-						p.resume 
-							i.fa.fa-download
-							span My Resume
-	.fullColumn.award
+	p.heading Resume
+	.row.intro
+		div.container 
+			div.pic
+				.logo
+					img(src="assets/img/logo.png")
+				p.name TARUN CHINE
+			div.summary
+				p.quote
+					span.fa.fa-quote-left
+					span I'm a passionate web developer who like to explore different way of doings things.
+					span.fa.fa-quote-right
+				div
+					p.resume 
+						span.fa.fa-download
+						span My Resume
+	.row
+		p.title Experience
+		.description
+			.post Project Engineer
+			.company
+				i.fa.fa-briefcase
+				span Wipro Technologies (Bangalore)
+			.duration
+				i.fa.fa-calendar 
+				span March-2014 to Present
+			.summary Worked on front end related technologies like HTML5 , CSS3 , Javascript ,Jquery , Angular , React , Bootstrap and lot more...
+	.row
+		
+		p.title Internship
+		.description
+			.post Intern
+			.company
+				i.fa.fa-briefcase 
+				span Computer Science Co-operation Indore (CSC Indore)
+			.duration
+				i.fa.fa-calendar 
+				span May-2012 to March-2013
+			.summary Worked on front end related technologies like HTML5 , CSS3 , Javascript ,Jquery , Angular , React , Bootstrap and lot more...
+				
+	.row
+		p.title Education
+		.description
+			.course Bachelor of Engineering (B.E.)
+			.company
+				i.fa.fa-briefcase 
+				span S.G.S.I.T.S (Indore)
+			.duration
+				i.fa.fa-calendar 
+				span July-2009 to May-2013
+			.summary Graduated from one of the finest collages of India with specialisation in Information Technology(IT).
+	.row.award
 		P.title Awards
-		ul
-			li Secured 1st position during training (mobile web development and android) in Wipro Technologies.
-			li Runner up in the Software Corner event (Gimmick) organized by IIT Kanpur on Annual Tech-fest Techkirti-2011.
-			li Secured 1st position in Chess competition organized by IIT Indore
+		.description
+			ul
+				li Secured 1st position during training (mobile web development and android) in Wipro Technologies.
+				li Runner up in the Software Corner event (Gimmick) organized by IIT Kanpur on Annual Tech-fest Techkirti-2011.
+				li Secured 1st position in Chess competition organized by IIT Indore
 
-	.fullColumn.skills
+	.row.skills
 		p.title Skills
-		.content
+		.flex-start.flex-wrap
 			.skill-bar
 				.skill-name HTML5
 				.skill-percent-bg

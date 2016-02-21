@@ -1,5 +1,7 @@
 header
 	width: 135px
+	position: relative
+	z-index: 2
 
 	.header-content
 		display: flex
@@ -31,25 +33,65 @@ header
 
 				a
 					text-decoration: none
-		p.social
-			display: flex
+	.mobile-nav-toggle
+		display: none
+		width: 45px
+		height: 45px
+		position: absolute
+		top: 20px
+		right: 20px
+		cursor: pointer
+		span,span:before,span:after
+			content: " "
+			display: block
+			height: 3px
+			background: #000
+			position: relative
+			top: 21px
+			background-color: #fff
+			transition: all .4s ease-in-out
+		span:before
+			top: -21px
+		span:after
+			top: 18px
+
+header.active
+	.mobile-nav-toggle
+		span
+			background: transparent
+		span:before,span:after
+			top: 0
+			transform-origin: center
+			transform: rotate(-45deg)
+		span:after
+			transform: rotate(45deg)
+
+@media all and (max-width: 734px)
+	.container
+		display: block
+	header
+		width: 100%
+		z-index: 2
+
+		.header-content
+			width: 100%
+			background-color: rgba(0,0,0,.7)
 			justify-content: space-around
-			margin: 55px 0px 20px
-			font-size: 25px
-			a
+			display: none
+			.logo,p.social
+				display: none
+			nav ul li
 				text-align: center
-				width: 36px
-				height: 36px
-				//border: 1px solid #909090
-				border-radius: 100%
-			
-				span
-					font-size: 20px
-				    line-height: 38px
-					color: #fff
-			a.mail
-				background-color: #410093
-			a.linkedin
-				background-color: #0077b5
-			a.facebook
+			a
+				display: inline-block
 				background-color: #3b5998
+				padding: 20px
+				max-width: 300px
+				width: 50%
+				color: #fff
+			
+		.mobile-nav-toggle
+			display: block
+	header.active
+		.header-content
+			display: flex

@@ -2,7 +2,51 @@
     font-family: "lucida-handwriting"
     src: url('../fonts/ufonts.com_lucida-handwriting-italic.ttf'),
     url('../fonts/ufonts.com_lucida-handwriting-italic.eot') /* IE */
+@font-face
+    font-family: "FjordOne"
+    src: url('../fonts/FjordOne-Regular.ttf'),
 
 body
-	font-family: lucida-handwriting;
-	font-size: 16px;
+	font-family: FjordOne
+	font-size: 18px
+.container
+	display: flex
+
+	.sections
+		min-height: 100vh
+		flex: 1
+		position: relative
+		z-index: 1
+
+		.section
+			min-height: 100vh
+.section 
+	.heading
+		text-align: center
+		font-size: 2em
+		padding: 30px 0px
+.row
+	padding: 0px 4% 20px
+	box-sizing: border-box
+p.social
+	display: flex
+	justify-content: space-around
+	margin: 55px 0px 20px
+	font-size: 25px
+	a
+		text-align: center
+		width: 36px
+		height: 36px
+		//border: 1px solid #909090
+		border-radius: 100%
+	
+		span
+			font-size: 20px
+		    line-height: 38px
+			color: #fff
+	a.mail
+		background-color: #410093
+	a.linkedin
+		background-color: #0077b5
+	a.facebook
+		background-color: #3b5998

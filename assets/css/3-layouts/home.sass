@@ -1,12 +1,3 @@
-.container
-	display: flex
-
-	.sections
-		min-height: 100vh
-		flex: 1
-
-		.section
-			min-height: 100vh
 
 #home-section
 	background:
@@ -37,88 +28,149 @@
 			display: inline-block
 #portfolio-section
 	background-color: #51A39D
-	.heading
-		text-align: center
-		font-size: 2em
-		padding: 30px 0px
+
 #about-section
 	background-color: #d7d7d7
-	.heading
-		text-align: center
-		font-size: 2em
-		padding: 30px 0px
-	p.title
-		background-color: #3b5998
-		padding: 5px 0px 5px 10px
-		color: #fff
-	.content
-		display: flex
-		justify-content: space-around
-		.col-1
-			width: 44%
-		.block-left
-			position: relative
-			left: -100px
-			transition: all 1s ease-in-out
-		.block-right
-			position: relative
-			right: -100px
-			transition: all 1s ease-in-out
+	.row.intro
+		display: table
+		div.container
+			display: table-row
+			div
+				display: table-cell
+				vertical-align: middle
+			.pic
+				width: 150px
+				text-align: center
+				img
+					width: 80%
+					margin-bottom: 15px
+			.summary
+				padding-left: 30px 
+				.quote 
+					span
+						margin: 0px 10px
+						font-size: 1.5em
+				div
+					text-align: center
+					display: block
+					margin-top: 20px
+					p.resume
+						margin: auto 
+						padding: 10px 20px
+						width: 150px
+						background-color: #3b5998
+						color: #fff
+						span
+							margin-right: 15px
+	.row
+		
+		.title
+			background-color: #3b5998
+			padding: 10px 0px 10px 10px
+			color: #fff
+			font-size: 1em
+			margin-bottom: 20px	
+	
 		.description
 			margin: 20px 10px
-			height: 200px
+			position: relative
 			.post,.course
 				border-bottom: 2px solid #000
-				padding-bottom: 5px
+				padding-bottom: 8px
 			span
 				margin-left: 10px
 			.company
-				margin: 5px 0px 
+				margin: 5px 0px 5px
 			.duration
-				margin-bottom: 20px
-
-			p.resume
-				margin: 50px auto 0px
-				padding: 10px 20px
-				width: 125px
-				background-color: #3b5998
-				color: #fff
-	.fullColumn
-		width: 94%
-		margin-left: 3%
-	.award ul
-		padding: 20px 20px 20px 40px
-	.skills
-		padding: 0px 0px 20px 0px
-		.content
-			padding-top: 20px
-			flex-wrap: wrap
-			justify-content: flex-start
-			.skill-bar
-				width: 26.6%
-				background-color: #000
+				position: absolute
+				top: 0
+				right: 0
+			.summary
+				margin-top: 15px
+		.skill-bar
+			width: 26.6%
+			background-color: #000
+			height: 30px
+			position: relative
+			margin-bottom: 20px
+			margin-left: 5%
+			display: inline-block
+			.skill-name
+				position: absolute
+				top: 5px
+				left: 5px
+			.skill-percent-bg
+				width: 0%
 				height: 30px
-				position: relative
-				margin-bottom: 20px
-				margin-left: 5%
+				background-color: rgba(255,255,255,0.7)
+				transition: all 2s ease-in-out
+			span
+				position: absolute
+				right: 5px
+				top: 5px
+				color: #fff
 
-				.skill-name
-					position: absolute
-					top: 5px
-					left: 5px
-				.skill-percent-bg
-					width: 0%
-					height: 30px
-					background-color: rgba(255,255,255,0.7)
-					transition: all 2s ease-in-out
-				span
-					position: absolute
-					right: 5px
-					top: 5px
-					color: #fff
+	.award ul
+		padding: 0px 20px 0px 40px
 #contact-section
 	background-color: #06425C
-	.heading
-		text-align: center
-		font-size: 2em
-		padding: 30px 0px
+	color: #fff
+	background-image: url('../img/bg (1).jpg')
+	background-size: cover
+	.row
+		display: flex
+		justify-content: space-around
+		min-height: 80vh
+		flex-direction: column
+		div.container
+			display: flex
+			justify-content: space-around
+			background-color: rgba(0,0,0,.7)
+			padding: 25px 0px 15px
+			border: 2px solid #fff
+			border-radius: 20px
+			.details
+				max-width: 300px
+				text-align: center
+				padding: 10px 20px
+				.social
+					justify-content: space-between
+					margin-top: 20px
+			.contactform
+				display: table
+				width: 300px
+				div
+					display: table-row
+					span
+						width: 85px
+						display: inline-block
+					span,input,textarea
+						display: table-col
+						vertical-align: middle
+					input,textarea
+						width: 200px
+						border: 1px solid #d7d7d7
+						min-height: 30px
+						margin-bottom: 10px
+						border-radius: 5px
+						resize: none
+				.submit
+					text-align: right
+					input
+						width: 80px
+
+@media all and (max-width: 549px)
+	#about-section 
+		.row 
+			.description 
+				.duration
+					position: static
+			.skill-bar
+				width: 42.5%
+	#contact-section 
+		.row 
+			div.container
+				display: block;
+				text-align: center
+			.details,.contactform
+				margin: auto	

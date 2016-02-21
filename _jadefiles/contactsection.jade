@@ -1,2 +1,27 @@
 #contact-section.section
-	p.heading  Contact
+	p.heading  Contact Me
+	.row
+		div.container
+			div.details
+				p Please feel free to contact me and please share your comment/suggestions about this website  and my articles. 
+				p.social
+					a(href="#").mail
+						span.fa.fa-envelope
+					a(href="#").linkedin
+						span.fa.fa-linkedin
+					a(href="#").facebook
+						span.fa.fa-facebook
+			div.contactform
+				form(action="//formspree.io/tarun.chine@yahoo.com", method="post")
+					div
+						span.label Name
+						input(type="text",name="name")
+					div 
+						span.label Email
+						input(type="email","name"="replyto")
+					div 
+						span.label Comment
+						textarea(name="comment",rows="5")
+					div.submit
+						input(type="Submit",value="Submit")
+
